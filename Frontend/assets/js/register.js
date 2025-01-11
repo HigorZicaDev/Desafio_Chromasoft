@@ -12,7 +12,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
 
     // Validação local
     if (password !== passwordConfirmation) {
-        errorContainer.innerHTML = '<p>Passwords do not match.</p>';
+        errorContainer.innerHTML = '<p>As senhas não são iguais, por favor verifique!</p>';
         return;
     }
 
@@ -37,8 +37,8 @@ document.getElementById('registerForm').addEventListener('submit', async functio
 
         if (response.ok) {
             // Registro bem-sucedido
-            alert('Registration successful! Redirecting to login page...');
-            window.location.href = 'login.html';
+            alert('Registrado com sucesso!');
+            window.location.href = 'index.html';
         } else {
             // Exibir erros da API
             if (data.errors) {
@@ -50,11 +50,11 @@ document.getElementById('registerForm').addEventListener('submit', async functio
                     });
                 }
             } else {
-                errorContainer.innerHTML = '<p>An unknown error occurred.</p>';
+                errorContainer.innerHTML = '<p>Erro desconhecido.</p>';
             }
         }
     } catch (error) {
         console.error('Error:', error);
-        errorContainer.innerHTML = '<p>Failed to connect to the API.</p>';
+        errorContainer.innerHTML = '<p>Falha ao tentar se conectar na API.</p>';
     }
 });
