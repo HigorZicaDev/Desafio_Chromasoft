@@ -9,7 +9,7 @@
 ```
 - Entre na pasta do projeto:
 ```bash
- cd projeto-laravel
+ cd Desafio_Chromasoft/Backend
 ```
 
 ### 2º Passo : Instale as dependências do projeto
@@ -41,7 +41,11 @@ DB_PASSWORD=sua_senha
 php artisan migrate
 ```
 
-### 5º Passo : Verificar se a API está rodando
+### 5º Passo : Executar o projeto e verificar se a API está rodando
+- Vamos rodar nossa aplicação laravel, execute o comando abaixo no terminal :
+```bash
+ php artisan serve
+```
 - Abra seu navegador (google, firefox etc...)
 - Acesse a seguinte url :
 ```bash
