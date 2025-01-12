@@ -2,11 +2,7 @@
 
 ## Para Testar o projeto abaixo :
 
-### 1º Passo : Clonar o projeto Backend
-- Execute o comando de git clone para baixar o projeto para sua máquina :
-```bash
- git clone https://github.com/HigorZicaDev/Desafio_Chromasoft.git
-```
+### 1º Passo : Acessar o projeto na pasta Backend
 - Entre na pasta do projeto:
 ```bash
  cd Desafio_Chromasoft/Backend
